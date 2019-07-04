@@ -1,0 +1,6 @@
+<!--pages/news/news.wxml-->
+<swiper indicator-dots="true" autoplay="true" class="news-banner">
+  <swiper-item wx:for="{{bannerImages}}" wx:key="index" wx:for-item="newsImage">
+    <image src="{{newsImage}}"></image>
+  </swiper-item>
+</swiper>

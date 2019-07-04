@@ -1,0 +1,8 @@
+/* pages/news/news.wxss */
+.news-banner {
+  width: 100%;
+  height: 400rpx;
+}
+.news-banner image {
+  width: 100%;
+}
