@@ -1,6 +1,23 @@
 <!--pages/news/news.wxml-->
+<import src="../template/template.wxml"/>
+
 <swiper indicator-dots="true" autoplay="true" class="news-banner">
   <swiper-item wx:for="{{bannerImages}}" wx:key="index" wx:for-item="newsImage">
     <image src="{{newsImage}}"></image>
   </swiper-item>
 </swiper>
+<view class="news-list">
+  <!-- <view class="news-item" wx:for="{{newList}}" wx:key="index">
+    <view class="item-head">
+      <image class="author-image" src="{{item.writersUrl}}"></image>
+      <text class="author">{{item.writers}}</text>
+      <text class="public-date">{{item.publishDateStr}}</text>
+    </view>
+    <text class="item-title">{{item.title}}</text>
+    <image class="news-image" src="{{item.newsUrl}}"></image>
+    <text class="description">{{item.description}}</text>
+  </view> -->
+  <block wx:for="{{newsList}}" wx:key="index">
+  <template is="newsItem" data="{{item,index: index}}"/>
+  </block>
+</view>

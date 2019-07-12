@@ -1,0 +1,80 @@
+@import "../template/template.wxss";
+
+.movie-info-container {
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx;
+  border-bottom: 1px solid #cccccc;
+}
+.movie-image {
+  width: 210rpx;
+  height: 300rpx;
+  flex-shrink: 0;
+}
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+.movie-title {
+  font-size: 36rpx;
+}
+.movie-in-theater {
+  font-size: 28rpx;
+  color: #8a8a8a
+}
+.movie-count {
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  color: #4c4c4c;
+}
+.movie-count image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.movie-count text {
+  padding: 0 5rpx;
+  font-size: 28rpx;
+  color: #8a8a8a;
+}
+.movie-description-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  border-bottom: 1px solid #cccccc;
+  font-size: 28rpx;
+}
+.title {
+  padding: 20rpx 0;
+  font-size: 36rpx;
+}
+.description {
+  font-size: 28rpx;
+}
+.avatars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.avatars view {
+  text-align: center;
+  font-size: 28rpx;
+}
+.avatars image {
+  width: 210rpx;
+  height: 300rpx;
+}
+.movie-avatars-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+.avatars-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

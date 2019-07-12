@@ -1,4 +1,5 @@
 // pages/news/news.js
+var data = require("../../static/news-data.js")
 Page({
 
   /**
@@ -9,14 +10,18 @@ Page({
       "../../images/news/5g.jpeg",
       "../../images/news/ai.jpeg",
       "../../images/news/huawei.jpeg"
-    ]
+    ],
+    newsList: data.newsData
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    // var app = getApp();
+    // this.setData({
+    //   newList: data.newsData
+    // })
   },
 
   /**
@@ -66,5 +71,12 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+
+  onOpenNewsDetail: function(event) {
+    var index = event.currentTarget.dataset.indexId;
+    wx.navigateTo({
+      url: "./news-detail?index=" + index,
+    })
   }
 })
